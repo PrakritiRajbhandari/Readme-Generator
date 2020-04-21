@@ -31,6 +31,7 @@ user runs node index.js and the application starts
 ### Terminal
 
 <img src="./img/terminal.JPG" alt="Terminal screenshot"/>
+
 ## License
 
 This project is licensed under the MIT - see the MIT file for details
