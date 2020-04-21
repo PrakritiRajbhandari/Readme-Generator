@@ -72,9 +72,10 @@ async function main() {
   const tests = userResponse.tests;
   // fetching data from git
   // user
-  const gitResponse = await axios.get(
-    `https://api.github.com/users/${gitUsername}`
-  );
+  const gitResponse = await axios
+    .get(`https://api.github.com/users/${gitUsername}`)
+    .catch(function (error) {});
+
   const gitData = gitResponse.data;
   const gitName = gitData.login;
   const gitEmail = gitData.email;
@@ -89,9 +90,9 @@ async function main() {
   var resultContributor;
   for (i = 0; i < contributorUserNamesArray.length; i++) {
     var contributorsGitUserName = contributorUserNamesArray[i];
-    const gitResponse2 = await axios.get(
-      `https://api.github.com/users/${contributorsGitUserName}`
-    );
+    const gitResponse2 = await axios
+      .get(`https://api.github.com/users/${contributorsGitUserName}`)
+      .catch(function (error) {});
     var gitContribuProfileImage = gitResponse2.data.avatar_url;
     var gitContribuUrl = gitResponse2.data.html_url;
     var gitContribuEmail = gitResponse2.data.email;
@@ -129,8 +130,8 @@ ${tests}
 \nLocation:${gitlocation}
 \nGitHub: ${gitUrl}
 `;
-  var writeResult = fs.writeFileSync(
-    path.join(__dirname, "../Readme-Generator", "readMe.md"),
+  fs.writeFileSync(
+    path.join(__dirname, "../Readme-Generator", "README.md"),
     result
   );
   console.log("file generated....");
