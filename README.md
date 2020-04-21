@@ -23,9 +23,14 @@ Create a command-line application that dynamically generates a README.md from a 
 User is prompt to answer questions. once the questionnaire is completed, a readme file will be generated
 
 ```
-User is prompt to answer questions. once the questionnaire is completed, a readme file will be generated
+user runs node index.js and the application starts
 ```
 
+## Screenshots
+
+### Terminal
+
+<img src="./img/terminal.JPG" alt="Terminal screenshot"/>
 ## License
 
 This project is licensed under the MIT - see the MIT file for details
@@ -33,8 +38,8 @@ This project is licensed under the MIT - see the MIT file for details
 ## Contributors
 
 undefined
-  
- <img src="https://avatars3.githubusercontent.com/u/197640?v=4" alt="drawing" width="150" display="inline"/> Prakriti GitHubLink: https://github.com/prakriti
+
+<img src="https://avatars3.githubusercontent.com/u/197640?v=4" alt="drawing" width="150" display="inline"/> Prakriti GitHubLink: https://github.com/prakriti
 
 ## Tests
 

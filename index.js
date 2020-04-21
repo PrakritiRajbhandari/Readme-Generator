@@ -131,7 +131,7 @@ ${tests}
 \nGitHub: ${gitUrl}
 `;
   fs.writeFileSync(
-    path.join(__dirname, "../Readme-Generator", "README.md"),
+    path.join(__dirname, "../Readme-Generator", "README1.md"),
     result
   );
   console.log("file generated....");
